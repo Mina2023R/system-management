@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<link rel="stylesheet" href="shop.css">
+
+
+<body>
+<div class="content">
+    <div class="head">
+    <h2>MINA SHOP</h2>
+    <P>online einkaufen system management</P></div>
+
+
+    <div class="input">
+        <input type="text" placeholder="title" id="title">
+           <div class="price">
+            <input type="number" onkeyup="gettotal()" placeholder="price" id="price">
+            <input type="number" onkeyup="gettotal()" placeholder="taxes" id="taxes">
+            <input type="number" onkeyup="gettotal()"  placeholder="ads" id="ads">
+            <input type="number" onkeyup="gettotal()" placeholder="profit" id="profit">
+            <small id="total"></small>
+           </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="sub">create</button>
+    </div>
+    <div class="output">
+        <div class="searchblock">
+            <input type="text" placeholder="search">
+            <div class="btnsearch">
+                <button id="searchtitle">search by title</button>
+                <button id="searchcategory">search by category</button>
+            </div>
+
+        </div>
+        <div id="btndel"></div>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>profit</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th >update</th>
+                    <th>delet</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+               
+            </tbody>
+
+
+
+
+
+
+        </table>
+    </div>
+
+</div>
+    <script src="shop.js"></script>  
+</body>
+</html>
